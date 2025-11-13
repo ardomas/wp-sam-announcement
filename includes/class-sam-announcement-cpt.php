@@ -14,6 +14,10 @@ class Sam_Announcement_CPT {
     }
 
     public function load_single_template($single) {
+        // If a block theme is active, let the block template system handle it (header/footer etc.)
+        if (function_exists('wp_is_block_theme') && wp_is_block_theme()) {
+            return $single;
+        }
         global $post;
         if ($post && $post->post_type === 'announcement') {
             $theme_template = locate_template('single-announcement.php');
