@@ -4,7 +4,7 @@
  * Description: A lightweight WordPress plugin for managing time-based announcements (date+time), speakers, organizers, and locations.
  * Version: 1.0.3
  * Author: Sam
- * Text Domain: sam-announcement
+ * Text Domain: wp-sam-announcement
  * Author URI: https://ardomas.com/
  */
 
