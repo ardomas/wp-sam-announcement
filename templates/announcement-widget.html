@@ -1,0 +1,19 @@
+<div class="announcement-widget-item" style="width: 60%; max-width: 800px; margin: 0px; padding: 20px 0px;"><a href="<?php the_permalink(); ?>">
+    <h2 class="announcement-title" style="text-align: center;"><?php the_title(); ?></h2>
+    <h5 class="announcement-date-time" style="display: block; text-align: center;">
+        <div class="announcement-date" style="width: 40%; text-align: right; display: inline;"><?php echo $date_label; ?></div>
+        <div class="announcement-separator" style="width: 20%; text-align: center; display: inline;"> | </div>
+        <div class="announcement-time" style="width: 40%; text-align: left; display: inline;"><?php echo $time_label; ?></div>
+    </h5>
+    <div style="display: flex">
+        <div class="announcement-image" style="width: 50%; text-align: center; border: 1px solid #ccc; padding: 20px; box-shadow: 0 0 15px 5px #ddd;">
+            <img src="<?php echo esc_url($image); ?>" style="width: 100%;" alt="<?php echo esc_attr(get_the_title()); ?>">
+        </div>
+        <div class="announcement-info" style="width: 50%; text-align: left; padding-left: 10px;">
+            <h5>Pembicara: </h5>
+            <h4 class="announcement-speaker"><?php echo $speakers_str; ?></p>
+            <h5>Lokasi:</h5>
+            <h4 class="announcement-location"><?php echo esc_html($location); ?></p>
+        </div>
+    </div>
+</a></div>

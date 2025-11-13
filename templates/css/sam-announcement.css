@@ -1,0 +1,93 @@
+.sam-announcement {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.sam-announcement .sa-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sam-announcement .sa-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.sam-announcement .sa-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+.sam-announcement-date-time-meta,
+.sam-announcement .sa-date-time-meta {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 1.5em;
+}
+
+.sam-announcement .sa-date, 
+.sam-announcement .sa-time {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.sam-announcement .sa-location {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.sam-announcement .sa-row {
+    width:100%; text-align: center; display: flex; flex-direction: column;
+}
+.sam-announcement .sa-image {
+    width: 45%; text-align: center;
+}
+.sam-announcement .sa-image img.sa-image {
+    width: calc( (900px * 0.45) - 10px );
+}
+
+.sam-announcement .sa-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.sam-announcement .sa-meta p {
+    margin: 0.3em 0;
+}
+
+.sam-announcement .sa-content {
+    margin: 1em 0;
+    text-align: left;
+}
+
+.sam-announcement ul {
+    list-style: disc inside;
+    margin: 0.5em 0 1em 0;
+    padding-left: 0;
+}
+
+.sam-announcement .sa-speakers li,
+.sam-announcement .sa-organizers li,
+.sam-announcement .sa-contacts li,
+.sam-announcement .sa-prices li {
+    margin-bottom: 0.5em;
+}
+
+.sam-announcement .sa-profession,
+.sam-announcement .sa-organization {
+    font-style: italic;
+    color: #666;
+    margin-left: 0.3em;
+}
