@@ -19,4 +19,4 @@ Built with clean, modular PHP and full support for custom templates.
 
 1. Download or clone this repository into your WordPress plugins directory:
    ```bash
-   git clone https://github.com/ardomas/announcement-plugin.git wp-content/plugins/announcement-plugin
+   git clone https://github.com/ardomas/wp-announcement-plugin.git wp-content/plugins/wp-announcement-plugin
