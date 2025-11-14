@@ -1,0 +1,126 @@
+/* Announcement Widget Styles */
+.announcement-widget-item {
+    width: 60%;
+    max-width: 800px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.announcement-widget-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.announcement-widget-item a:hover {
+    text-decoration: none;
+}
+
+.announcement-title {
+    text-align: left;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.announcement-date-time {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.announcement-date {
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+}
+
+.announcement-separator {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+
+.announcement-time {
+    width: 40%;
+    text-align: left;
+    display: inline-block;
+}
+
+.announcement-widget-item > a > div[style*="display: flex"] {
+    display: flex;
+    gap: 10px;
+}
+
+.announcement-widget-item .announcement-image {
+    width: 40%;
+    text-align: center;
+    background-color: rgba(255,255,255,1);
+    border: 1px solid #ccc7;
+    padding: 20px;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
+}
+.announcement-widget-item .announcement-image:hover {
+    box-shadow: 0 0 15px 5px rgba(255,255,255,0.5);
+}
+
+.announcement-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.announcement-info {
+    width: 60%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.announcement-info h5 {
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+}
+
+.announcement-info h4 {
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.announcement-speaker,
+.announcement-location {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcement-widget-item {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .announcement-widget-item > a > div[style*="display: flex"] {
+        flex-direction: column;
+    }
+    
+    .announcement-image,
+    .announcement-info {
+        width: 100%;
+    }
+    
+    .announcement-info {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    
+    .announcement-date,
+    .announcement-separator,
+    .announcement-time {
+        width: auto;
+        display: block;
+        text-align: left;
+    }
+    
+    .announcement-separator {
+        display: none;
+    }
+}
+

@@ -36,7 +36,7 @@ if (have_posts()) :
 		<article class="sam-announcement">
 			<header class="sa-header">
 				<h2 class="sa-subtitle"><?php echo $sub_title; ?></h2>
-				<h1 class="sa-title"><?php the_title(); ?></h1>
+				<h2 class="sa-title"><?php the_title(); ?></h2>
 
 				<div class="sa-date-time-meta">
 					<div class="sa-date"><?php echo $start_date . $end_range; ?></div>

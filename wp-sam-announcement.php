@@ -66,6 +66,17 @@ function sam_announcement_enqueue_assets() {
 add_action('wp_enqueue_scripts', 'sam_announcement_enqueue_assets');
 
 /**
+ * Front-end assets for announcement widget
+ */
+function sam_announcement_widget_enqueue_assets() {
+    $css_path = plugin_dir_path(__FILE__) . 'templates/css/announcement-widget.css';
+    $css_url  = plugins_url('templates/css/announcement-widget.css', __FILE__);
+    $version  = file_exists($css_path) ? filemtime($css_path) : null;
+    wp_enqueue_style('sam-announcement-widget', $css_url, [], $version);
+}
+add_action('wp_enqueue_scripts', 'sam_announcement_widget_enqueue_assets');
+
+/**
  * Shortcode: [active_announcements]
  */
 function active_announcements_widget() {
