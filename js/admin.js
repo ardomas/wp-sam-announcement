@@ -1,3 +1,7 @@
+/**
+ * basic js for wp-sam announcement
+ */
+
 (function($){
 
     var mediaUploader;
